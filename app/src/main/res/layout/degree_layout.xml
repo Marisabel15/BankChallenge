@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:visibility="invisible"
+            android:background="@drawable/setascale"/>
+
+        <ImageView
+            android:id="@+id/view1"
+            android:layout_width="59dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/medium"
+            android:backgroundTint="@color/colorLightGreen"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:visibility="invisible"
+            android:background="@drawable/setascale"/>
+
+        <ImageView
+            android:id="@+id/view2"
+            android:layout_width="59dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="1dp"
+            android:backgroundTint="@color/colorGreen"
+            android:background="@drawable/medium" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:visibility="invisible"
+            android:background="@drawable/setascale"/>
+
+        <ImageView
+            android:id="@+id/view3"
+            android:layout_width="59dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/medium"
+            android:backgroundTint="@color/colorYellow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/setascale"/>
+
+        <ImageView
+            android:id="@+id/view4"
+            android:layout_width="59dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/medium"
+            android:backgroundTint="@color/colorOrange" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:visibility="invisible"
+            android:background="@drawable/setascale"/>
+
+        <ImageView
+            android:id="@+id/view5"
+            android:layout_width="59dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/medium"
+            android:backgroundTint="@color/colorRed" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
