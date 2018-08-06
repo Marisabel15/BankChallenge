@@ -3,7 +3,7 @@
 <android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:background="@android:color/white"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -353,7 +353,7 @@
             android:id="@+id/investir"
             android:layout_width="315dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="100dp"
             android:layout_marginTop="40dp"
             android:layout_weight="1"
             android:background="@drawable/button_style_red"
@@ -364,7 +364,7 @@
             app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/layout_1"
-            app:layout_constraintVertical_bias="0.706" />
+             />
 
     </android.support.constraint.ConstraintLayout>
 
