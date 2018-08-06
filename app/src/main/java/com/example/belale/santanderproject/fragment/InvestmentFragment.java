@@ -2,6 +2,7 @@ package com.example.belale.santanderproject.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -28,7 +29,7 @@ import retrofit2.Response;
 
 
 public class InvestmentFragment extends Fragment {
-
+    public Toolbar toolbar;
     public InfoAdapter mAdapter;
     public DownInfoAdapter dAdapter;
     public RecyclerView dRecyclerView;
@@ -42,6 +43,10 @@ public class InvestmentFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate( R.layout.investment_fragment, container, false );
+
+        toolbar = (Toolbar) view.findViewById(R.id.toolbar);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+
 
         fundName = (TextView) view.findViewById( R.id.fund_name );
         whatIs = (TextView) view.findViewById( R.id.what_is );
@@ -94,14 +99,14 @@ public class InvestmentFragment extends Fragment {
                     riskTitle.setText( fund.getScreen().getRiskTitle() );
                     infoTitle.setText( fund.getScreen().getInfoTitle() );
 
-                    taxOne.setText( String.valueOf( fund.getScreen().getMoreInfo().getMonth().getFund() ) );
-                    taxTwo.setText( String.valueOf( fund.getScreen().getMoreInfo().getMonth().getCdi() ) );
+                    taxOne.setText( String.valueOf( fund.getScreen().getMoreInfo().getMonth().getFund()+ getString(R.string.per_cent) ) );
+                    taxTwo.setText( String.valueOf( fund.getScreen().getMoreInfo().getMonth().getCdi()+ getString(R.string.per_cent) ) );
 
-                    taxThree.setText( String.valueOf( fund.getScreen().getMoreInfo().getYear().getFund() ) );
-                    taxFour.setText( String.valueOf( fund.getScreen().getMoreInfo().getYear().getCdi() ) );
+                    taxThree.setText( String.valueOf( fund.getScreen().getMoreInfo().getYear().getFund()+ getString(R.string.per_cent) ) );
+                    taxFour.setText( String.valueOf( fund.getScreen().getMoreInfo().getYear().getCdi()+ getString(R.string.per_cent) ) );
 
-                    taxFive.setText( String.valueOf( fund.getScreen().getMoreInfo().getTmonth().getFund() ) );
-                    taxSix.setText( String.valueOf( fund.getScreen().getMoreInfo().getTmonth().getCdi() ) );
+                    taxFive.setText( String.valueOf( fund.getScreen().getMoreInfo().getTmonth().getFund()+ getString(R.string.per_cent) ) );
+                    taxSix.setText( String.valueOf( fund.getScreen().getMoreInfo().getTmonth().getCdi()+ getString(R.string.per_cent) ) );
 
                     setupRecycler(fund.getScreen().getInfo());
                     setupRecycler_1(fund.getScreen().getDownInfo());

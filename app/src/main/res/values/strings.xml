@@ -3,4 +3,7 @@
     <string name="title_screen_investment">Investimento</string>
     <string name="text_investment_objetivo">O Fundo tem por objetivo proporcionar aos \n seus cotistas rentabilidade no longo prazo\n através de investimentos.</string>
     <string name="taxa_de_administra_o">Taxa de administração</string>
+    <string name="per_cent">%</string>
+    <string name="menu_buscar">Buscar</string>
+    <string name="menu_sobre">Sobre</string>
 </resources>
