@@ -204,7 +204,6 @@
                 </TableRow>
 
                 <TableRow>
-
                     <TextView
                         android:id="@+id/year"
                         android:layout_width="140dp"
@@ -225,8 +224,8 @@
                         android:layout_marginStart="40dp"
                         android:textColor="@color/colorAlmostBlackLetters"/>
                 </TableRow>
-                <TableRow>
 
+                <TableRow>
                     <TextView
                         android:id="@+id/tmonths"
                         android:layout_width="140dp"
@@ -249,7 +248,7 @@
                 </TableRow>
             </TableLayout>
 
-        <View
+            <View
             android:id="@+id/image_image"
             android:layout_width="315dp"
             android:layout_height="1dp"
@@ -260,7 +259,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/table" />
 
-        <android.support.v7.widget.RecyclerView
+            <android.support.v7.widget.RecyclerView
             android:id="@+id/info_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -286,22 +285,25 @@
                 app:layout_constraintStart_toStartOf="parent"
                 />
 
-            <Button
-            android:id="@+id/investir"
-            android:layout_width="315dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="100dp"
-            android:layout_marginTop="40dp"
-            android:layout_weight="1"
-            android:background="@drawable/new_button"
-            android:text="Investir"
-            android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/layout_1"
-             />
+
+            <ToggleButton
+                android:id="@+id/investir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/new_button"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_1"
+                android:textOff="@string/investir_btn"
+                android:textOn="@string/investir_btn_1"
+                />
 
     </android.support.constraint.ConstraintLayout>
 
